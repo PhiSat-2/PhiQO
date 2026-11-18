@@ -1,8 +1,8 @@
 ![ΦQO Φsat-2 Toolkit Dashboard](assets/phisat2-toolkit-dashboard.png)
 
-# ΦQO — Φsat-2 catalogues
+# **PHI**Sat-2 **Q**uality **O**bservations (**ΦQO**): A Φsat-2 data catalogue
 
-This repository provides Φsat-2 Level-1 **products' references and associated metadata**, organized into **geometry**, **image_quality** and **radiometry**. A reference identifies a product on Insula by its name, catalogue ID and acquisition dates. Associated metadata includes site coordinates, expected local band paths and any curated pixel regions of interest. The repository does not contain the satellite imagery itself.
+This repository provides Φsat-2 Level-1 **references to products and associated metadata**, organized into **geometry**, **image_quality** and **radiometry**. A reference identifies a product on Insula by its name, catalogue ID and acquisition dates. Associated metadata includes site coordinates, expected local band paths and any curated pixel regions of interest. The repository does not contain the satellite imagery itself.
 
 **ΦQO** (PhiQO) stands for **PHI**Sat-2 **Q**uality **O**bservations.
 
@@ -102,7 +102,7 @@ The released site list contains 28 sites. The site CSV stores coordinates and ca
 
 
 
-Run `python update_datasets.py` to check for newer acquisitions; this table documents the dated snapshot above.
+Run `python update_datasets.py` to check for newer acquisitions; the counts and tables above document the dated snapshot and may change after a new update.
 
 ## Installation and Insula credentials
 
