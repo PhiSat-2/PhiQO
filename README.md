@@ -1,10 +1,8 @@
 ![ΦQO Φsat-2 Toolkit Dashboard](assets/phisat2-toolkit-dashboard.png)
 
-# **PHI**Sat-2 **Q**uality **O**bservations (**ΦQO**): A Φsat-2 data catalogue
+# **Φ**Sat-2 **Q**uality **O**bservations (**ΦQO**): A Φsat-2 data catalogue
 
 This repository provides Φsat-2 Level-1 **references to products and associated metadata**, organized into **geometry**, **image_quality** and **radiometry**. A reference identifies a product on Insula by its name, catalogue ID and acquisition dates. Associated metadata includes site coordinates, expected local band paths and any curated pixel regions of interest. The repository does not contain the satellite imagery itself.
-
-**ΦQO** (PhiQO) stands for **PHI**Sat-2 **Q**uality **O**bservations.
 
 **Phi-Down** is the Python client used to authenticate to Insula, search its catalogue for acquisitions covering the configured site coordinates, and resolve and download product archives. Updating the local catalogues means adding newly discovered references and refreshing metadata in JSON files. It does not download imagery, process pixels or publish changes back to Insula; imagery is downloaded separately on request.
 
