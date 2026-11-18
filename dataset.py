@@ -1,4 +1,4 @@
-"""Shared metadata helpers for the CalVal JSON catalogues (no imagery dependencies)."""
+"""Shared metadata helpers for the PhiQO JSON catalogues (no imagery dependencies)."""
 from __future__ import annotations
 
 import configparser

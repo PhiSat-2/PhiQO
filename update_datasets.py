@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check every configured site on Insula, update CalVal JSON files and report changes."""
+"""Check every configured site on Insula, update PhiQO JSON files and report changes."""
 from __future__ import annotations
 
 import argparse
@@ -21,7 +21,7 @@ from dataset import (
     validate_config, write_json,
 )
 
-LOGGER = logging.getLogger("calval-update")
+LOGGER = logging.getLogger("phiqo-update")
 
 def make_candidate_aoi(site: Site, half_width_degrees: float) -> str:
     """Build an AOI ONLY for candidate retrieval, not for inclusion."""

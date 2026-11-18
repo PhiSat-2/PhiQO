@@ -1,8 +1,10 @@
-![CalValDataset Φsat-2 Toolkit Dashboard](assets/phisat2-toolkit-dashboard.png)
+![ΦQO Φsat-2 Toolkit Dashboard](assets/phisat2-toolkit-dashboard.png)
 
-# CalValDataset — Φsat-2 catalogues
+# ΦQO — Φsat-2 catalogues
 
 This repository provides Φsat-2 Level-1 **products' references and associated metadata**, organized into **geometry**, **image_quality** and **radiometry**. A reference identifies a product on Insula by its name, catalogue ID and acquisition dates. Associated metadata includes site coordinates, expected local band paths and any curated pixel regions of interest. The repository does not contain the satellite imagery itself.
+
+**ΦQO** (PhiQO) stands for **PHI**Sat-2 **Q**uality **O**bservations.
 
 **Phi-Down** is the Python client used to authenticate to Insula, search its catalogue for acquisitions covering the configured site coordinates, and resolve and download product archives. Updating the local catalogues means adding newly discovered references and refreshing metadata in JSON files. It does not download imagery, process pixels or publish changes back to Insula; imagery is downloaded separately on request.
 
@@ -286,13 +288,13 @@ Contributions are welcome, including suggestions for new calibration and validat
 3. Add tests and documentation updates where relevant, and keep the runnable examples consistent with any interface changes.
 4. Open a pull request with a clear description of the proposed change and its validation.
 
-To propose a new released site, include its name, country, unique location code, latitude/longitude in EPSG:4326, relevant categories (`geometry`, `image_quality`, `radiometry`) and a short explanation of its calibration/validation value. Add the row to the released `sites.csv` (under `src/calvaldataset/data/` in the package branch). Include product identifiers or verified crop information when available; leave unanalysed crops empty rather than inventing coordinates.
+To propose a new released site, include its name, country, unique location code, latitude/longitude in EPSG:4326, relevant categories (`geometry`, `image_quality`, `radiometry`) and a short explanation of its calibration/validation value. Add the row to the released `sites.csv` (under `src/phiqo/data/` in the package branch). Include product identifiers or verified crop information when available; leave unanalysed crops empty rather than inventing coordinates.
 
 For sites intended only for your own workflow, use the separate personal-site CSV described above instead of changing the released list.
 
 For bugs, questions and new site suggestions, use:
 
-- Issues: [CalValDataset issues](https://github.com/lorenzopapa5/CalValDataset/issues).
+- Issues: [ΦQO issues](https://github.com/PhiSat-2/PhiQO/issues).
 
 ## Citation
 
