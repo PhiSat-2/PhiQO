@@ -251,9 +251,19 @@ After extraction, the downloader identifies the original TIFFs and creates the s
 
 The project stores crop definitions and does not perform image cropping or image-quality analysis. Every product has a numeric `metadata.resolution` value of `4.75`, expressed in metres, matching the nominal Φsat-2 resolution used by this dataset. New acquisitions receive the same value. Original TIFF filenames and raster dimensions are not guessed. Updates never transfer a crop to another acquisition. Historical information is retained in the existing product metadata; numeric latitude/longitude values refer to the current search coordinates.
 
-## Runnable examples
+## Tests and runnable examples
 
-The former unit-test folder has been replaced by [examples](examples/README.md), containing practical scripts that call the actual workflow code:
+The repository includes automated tests in [tests](tests/) and practical, executable usage guides in [examples](examples/README.md). The examples call the actual workflow code and are useful for trying the catalogue and download commands; they do not replace the automated test suite.
+
+Run the automated tests from the repository root:
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+The tests are offline and do not require Insula credentials or downloaded imagery.
+
+The runnable examples are:
 
 ```powershell
 # Read local catalogues and display selected metadata.
@@ -294,10 +304,14 @@ For bugs, questions and new site suggestions, use:
 
 ## Citation
 
-Citation details will be provided in a future release. The following entry is a placeholder:
+If you use this repository or its reference datasets, please cite:
 
 ```bibtex
 @misc{VHRODA2026,
+  author       = {Papa, Lorenzo and Le Tallec, Robin and Meoni, Gabriele and Saunier, Sébastien and De Laurentis, Leonardo},
+  title        = {Advancing Cal/Val Activities for ΦSat-2: Image Quality Assessment, Geometric Corrections, Blur Mitigation and Community Reference Datasets},
+  year         = {2026},
+  howpublished = {VHRODA 2026}
 }
 ```
 

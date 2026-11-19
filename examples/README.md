@@ -76,5 +76,14 @@ python examples/03_update_datasets.py --personal-sites ../private-sites.csv --ru
 ```
 
 Live updates write `reports/last_update.json` and preserve existing products,
-session identifiers and crop metadata. These are executable usage examples,
-not an automated test suite.
+session identifiers and crop metadata. These scripts are executable usage
+examples, not a replacement for the automated tests in [tests](../tests/).
+
+Run the automated tests from the repository root with:
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+The tests are offline and do not require Insula credentials or downloaded
+imagery.
