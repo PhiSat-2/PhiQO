@@ -2,7 +2,7 @@
 
 # **Φ**Sat-2 **Q**uality **O**bservations (**ΦQO**): A data catalogue for Calibration and Validation
 
-This repository provides Φsat-2 Level-1 product references and metadata for **geometry**, **image_quality** and **radiometry** calibration and validation workflows. It includes site coordinates, acquisition metadata, band destinations and optional pixel regions of interest; it does not contain satellite imagery.
+This repository provides Φsat-2 Level-1B product references and metadata for **geometry**, **image_quality** and **radiometry** calibration and validation workflows. It includes site coordinates, acquisition metadata, band destinations and optional pixel regions of interest; it does not contain satellite imagery.
 
 ## Repository contents
 
